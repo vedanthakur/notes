@@ -23,29 +23,28 @@
         }
 
         .nav-show {
-            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            color: white;
-            background-color: #164e63;
-            padding-left: 96px;
-            padding-right: 96px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- NAV BAR -->
     <nav class="absolute right-0">
-        <!-- <ul id="nav" class="h-screen flex flex-col justify-around text-white bg-cyan-900 px-24"> -->
-        <ul id="nav" class="nav-hide">
+        <ul id="nav" class="h-screen nav-hide text-white bg-cyan-900 px-24">
             <li><button class="py-1 px-2 bg-cyan-900">Home</button></li>
             <li><button class="py-1 px-2 bg-cyan-900">Notes</button></li>
             <li><button class="py-1 px-2 bg-cyan-900">Contact</button></li>
         </ul>
     </nav>
+
+    <!-- PAGE CONTENT -->
     <div class="min-h-screen w-screen flex justify-center items-center flex-col relative">
+        
+        <!-- MENU BUTTON -->
         <div class="navbar absolute left-3/4 bottom-3/4 pb-20 pl-40">
             <button onclick="toggleMenu()"
                 class=" relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-cyan-900 to-blue-200 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
@@ -53,14 +52,18 @@
                     class="relative px-4 py-4 transition-all ease-in duration-75 bg-white dark:bg-cyan-900 rounded-md group-hover:bg-opacity-0">
                     <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
-        <div class="logo w-1/4 absolute bottom-2/3 ">
-            <img src="logo (2).png" alt="">
+
+
+        <div class="logo w-1/4">
+            <img src="logo (2).png" alt="Add Notes">
         </div>
-        <div class="text-center absolute">
-            <h1 class="text-7xl font-bold text-black mb-4 p-10">I am Aadarsh Thakur</h1>
-            <h1 class="text-4xl font-bold text-black">A high school student</h1>
+
+        <div class="text-center mt-12">
+            <h1 class="text-7xl font-bold text-black">I am Aadarsh Thakur</h1>
+            <h1 class="text-4xl font-bold text-black mt-12">A high school student</h1>
         </div>
-        <div class="button absolute top-3/4">
+
+        <div class="button mt-12">
             <button
                 class=" relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-xl font-medium text-white rounded-lg group bg-gradient-to-br from-cyan-900 to-blue-200 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
                 <span
